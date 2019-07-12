@@ -1,0 +1,538 @@
+@charset "UTF-8";
+
+body{
+    position: relative;
+}
+/*开始 头部*/
+header{
+    width: 100%;
+}
+
+/*开始 顶部导航1*/
+header .nav-1{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-image: linear-gradient(90deg,#222325,#3b3c3f,#222325);
+}
+header .nav-1 .logo-img img{
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+
+header .nav-1 .list-1{
+    width: 1220px;
+    margin: auto;
+}
+header .nav-1 .list-1 li:nth-child(1){
+    margin-left: 181px;
+}
+header .nav-1 .list-1 li a{
+    color: hsla(0,0%,100%,.7);
+    display: block;
+    font-size: 12px;
+    padding: 0 20px;
+}
+header .nav-1 .list-1 li a:hover{
+    color: #e5e5e5;
+}
+header .nav-1 .list-1 li a.active{
+    color: #e5e5e5;
+    font-weight: 700;
+}
+header .nav-1 .sico{
+    position: relative;
+    top: -38px;
+    right: 38px;
+}
+header .nav-1 .sico li.user{
+    width: 20px;
+}
+header .nav-1 .sico li.shopCar{
+    width: 21px;
+}
+header .nav-1 .sico li a i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+header .nav-1 .sico .user a i{
+    background: url("../images/head/sprite1.png") 1px 2px no-repeat;
+    background-size: 180%;
+}
+
+header .nav-1 .sico .shopCar a i{
+    position: relative;
+    z-index: 1;
+    left: 20px;
+    background: url("../images/head/sprite1.png") 0 -17px no-repeat;
+    background-size: 180%;
+}
+
+/*开始 购物车1*/
+header .nav-1 .sico .shopCar .sc-wrap{
+    display: none;
+    position: absolute;
+    z-index: 14;
+    right: -19px;
+    top: 40px;
+    border: 0 solid hsla(0,0%,100%,.01);
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.06),0 20px 40px rgba(0,0,0,.15);
+    overflow: hidden;
+    height: 314px;
+    width: 360px;
+    background: #fff;
+}
+header .nav-1 .sico .shopCar .sc-wrap .con{
+    overflow: hidden;
+    height: 134px;
+    padding-top: 180px;
+    background-size: auto 62px;
+    background: url("../images/head/shopCar.png")center 90px no-repeat;
+    text-align: center;
+}
+header .nav-1 .sico .shopCar .sc-wrap .con p{
+    color: #bcbcbc;
+    font-size: 12px;
+}
+header .nav-1 .sico .shopCar .sc-wrap .con h3{
+    font-size: 18px;
+    color: #333;
+    margin: -18px 0 -20px 0;
+}
+
+/*开始 顶部导航2*/
+header .nav-2{
+    width: 100%;
+    height: 28px;
+    padding: 23px 0;
+    position: relative;
+    background: #fff;
+    z-index: 13;
+    border-bottom: 1px solid #e1e1e1;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.1);
+}
+header .nav-2 .con{
+    width: 1220px;
+    margin: auto;
+}
+header .nav-2 .con ul{
+    height: 28px;
+    line-height: 28px;
+}
+header .nav-2 .con ul li{
+    position: relative;
+    float: left;
+    display: block;
+    padding-right: 30px;
+    color: rgba(0,0,0,.7);
+}
+
+header .nav-2 .con ul li a:hover{
+    color: #5079d9;
+}
+
+
+header .nav-2 .con1{
+    display: none;
+    float: left;
+    padding-top: 37px;
+    margin-top: 23px;
+    height: 222px;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #e1e1e1;
+    box-shadow: inset 0 4px 10px 0 rgba(0,0,0,.1);
+}
+/*开始 居中*/
+header .nav-2 .con1 .con11{
+
+    width: 1200px;
+    margin: auto;
+}
+/*开始 下拉菜单*/
+/*开始 下拉菜单例1*/
+header .nav-2 .con1 .con11 .con111{
+
+    display: none;
+    text-align: center;
+}
+header .nav-2 .con1 .con11 .con111 ul{
+}
+header .nav-2 .con1 .con11 .con111 li{
+    display: inline-block;
+    margin-right: 28px;
+
+}
+header .nav-2 .con1 .con11 .con111 h6{
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+header .nav-2 .con1 .con11 .con111 span{
+    color: #d44d44;
+    font-weight: 700;
+}
+header .nav-2 .con1 .con11 .con111 span:before{
+    padding-right: 2px;
+    content: "\A5";
+    font-size: 12px;
+}
+header .nav-2 .con1 .con11 .con111 span:after{
+    padding-left: 2px;
+    content: "\8D77";
+    color: gray;
+    font-size: 12px;
+}
+
+/*开始 下拉菜单例2*/
+header .nav-2 .con1 .con11 .con112{
+    display: none;
+    text-align: center;
+}
+header .nav-2 .con1 .con11 .con112 .box1 ul{
+    margin-top: 28px;
+    display: inline-block;
+}
+header .nav-2 .con1 .con11 .con112 .box1 ul li.l-tit{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+header .nav-2 .con1 .con11 .con112 .box1 ul li.l-tit .tit{
+    position: absolute;
+    left: 50px;
+    font-size: 12px;
+    opacity: .5;
+    color: #000;
+    font-weight: 700;
+    cursor: default;
+}
+header .nav-2 .con1 .con11 .con112 .box1 ul.shoe li.l-tit .tit{
+    left: 20px;
+}
+header .nav-2 .con1 .con11 .con112 .box1 ul li.juti{
+    margin: 26px 0 0 20px;
+}
+header .nav-2 .con1 .con11 .con112 .box1 ul li.juti1{
+    margin: 5px 0 0 50px;
+}
+header .nav-2 .con1 .con11 .con112 .box1 ul li.juti span{
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    font-weight: 700;
+    color: rgba(0,0,0,.8);
+}
+header .nav-2 .con1 .con11 .con112 .box1 ul.shoe{
+    position: relative;
+    top: -48px;
+    margin-left: 70px;
+}
+
+/*开始 搜索框*/
+header .nav-2 .search{
+
+   /* display: none;*/
+    margin: auto;
+    width: 1200px;
+}
+header .nav-2 .search .search-bar{
+
+    float: right;
+    z-index: 45;
+}
+header .nav-2 .search .search-bar form{
+    position: absolute;
+    z-index: 40;
+    right: 105px;
+    top: 18px;
+    height: 36px;
+    width: 330px;
+    padding-left: 40px;
+    padding-right: 15px;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+header .nav-2 .search .search-bar form input{
+    position: absolute;
+    top: 0;
+    outline: none;
+    border: none;
+    width: 273px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+/*放大镜按钮*/
+header .nav-2 .search .search-bar form button{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-size: contain;
+    border: none;
+    background: url("../images/head/search.png") transparent;
+}
+
+/*T恤选项*/
+header .nav-2 .search .search-bar form .tixue{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+    transform: translateY(30%);
+}
+header .nav-2 .search .search-bar form .tixue a{
+    display: block;
+    color: #3965cc;
+    border: 1px solid #93b2f7;
+    background: #e5efff;
+    font-weight: bold;
+    width: 41px;
+    height: 20px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 12px;
+}
+
+/*开始 搜索框选项*/
+header .nav-2 .search .search-bar form .select{
+    display: none;
+    position: relative;
+    top: 55px;
+    left: -41px;
+    z-index: 14;
+    width: 330px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 14px;
+}
+header .nav-2 .search .search-bar form .select .ssjx{
+    position: absolute;
+    z-index: 15;
+    top: -9px;
+    left: 40px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    transform: rotate(45deg);
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+}
+header .nav-2 .search .search-bar form .select .list{
+    margin-top: 146px;
+}
+header .nav-2 .search .search-bar form .select .list li{
+    margin: -40px 0 0 20px;
+
+    font-size: 16px;
+}
+
+header .nav-2 .search .search-bar form .select .list li a:hover{
+    font-weight: bold;
+    color: #3965cc;
+}
+
+/*开始 用户及购物车图标*/
+header .nav-2 .sico1{
+    display: none;
+    position: relative;
+    width: 1200px;
+}
+header .nav-2 .sico1 ul li{
+    width: 20px;
+    height: 20px;
+    margin: -24px 0 0 -10px;
+    cursor: pointer;
+}
+header .nav-2 .sico1 ul li.user1{
+    background: url("../images/head/user.png")50% no-repeat;
+    background-size: contain;
+}
+header .nav-2 .sico1 ul li.shopCar1{
+    margin-left: 32px;
+    background: url("../images/head/shopCar1.png")50% no-repeat;
+    background-size: contain;
+}
+
+/*开始 购物车2*/
+header .nav-2 .sc-wrap1{
+    display: none;
+    position: absolute;
+    z-index: 14;
+    right: 270px;
+    top: 68px;
+    border: 0 solid hsla(0,0%,100%,.01);
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.06),0 20px 40px rgba(0,0,0,.15);
+    height: 314px;
+    width: 360px;
+    background: #fff;
+}
+header .nav-2 .sc-wrap1 .ssjx1{
+    position: absolute;
+    top: -11px;
+    left: 280px;
+    z-index: 15;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+    border-radius: 4px;
+    transform: rotate(45deg);
+}
+header .nav-2 .sc-wrap1 .con12{
+    overflow: hidden;
+    height: 134px;
+    padding-top: 180px;
+    background-size: auto 62px;
+    background: url("../images/head/shopCar.png")center 90px no-repeat;
+    text-align: center;
+}
+header .nav-2 .sc-wrap1 .con12 p{
+    color: #bcbcbc;
+    font-size: 12px;
+}
+header .nav-2 .sc-wrap1 .con12 h3{
+    font-size: 18px;
+    color: #333;
+    margin: -18px 0 6px 0;
+}
+
+/*开始 底部*/
+footer{
+    position: absolute;
+    top: 4421px;
+    height: 355px;
+    width: 100%;
+    background: #fafafa;
+    border-top: 1px solid #e6e6e6;
+}
+footer .con{
+    margin: auto;
+    width: 1200px;
+    height: 223px;
+    border-bottom: 1px solid #e6e6e6;
+}
+footer .con .con1{
+    padding: 60px 0 55px;
+}
+footer .con .con1 .left .list1{
+    margin-right: 90px;
+}
+footer .con .con1 .left .list1 li{
+    line-height: 1;
+}
+footer .con .con1 .left .list1 li h3{
+    color: #646464;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 0 20px;
+}
+footer .con .con1 .left .list1 li ul li{
+    padding: 7px 0;
+}
+footer .con .con1 .left .list1 li ul li a{
+    color: #969696;
+    font-size: 12px;
+}
+footer .con .con1 .left .list1 li ul li a:hover{
+    color: #5079d9;
+}
+footer .con .con1 .right{
+    position: relative;
+    top: -116px;
+    right: 0;
+}
+footer .con .con1 .right ul li.tel{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+    cursor: default;
+    color: #5079d9;
+    position: relative;
+}
+footer .con .con1 .right ul li.time{
+    margin-top: 15px;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    line-height: 1;
+    color: #999;
+    text-align: right;
+}
+footer .con .con1 .right ul li.desc{
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1;
+    color: #999;
+    text-align: right;
+    font-family: "PingFang SC";
+}
+
+footer .con .con1 .right ul li.online a{
+    position: relative;
+    float: right;
+    width: 132px;
+    height: 30px;
+    line-height: 30px;
+    background: linear-gradient(#fcfcfc,#f5f5f5);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 15px;
+    text-align: center;
+    color: #5079d9;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+footer .con .con1 .right ul li.online a span{
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/head/help.png");
+}
+
+footer .footer{
+    width: 1220px;
+    margin: auto;
+    padding: 30px 0 60px;
+}
+footer .footer h4{
+    float: left;
+    height: 15px;
+    line-height: 17px;
+    color: #bdbdbd;
+    font-size: 12px;
+    padding-right: 9px;
+}
+footer .footer a{
+    border-left: 1px solid #ababab;
+    font-size: 12px;
+    color: #ababab;
+    padding: 0 12px;
+}
+footer .footer a:hover{
+    color: #5079d9;
+}
+footer .footer h5{
+    padding: 10px 0 0;
+    font-size: 12px;
+    color: #bdbdbd;
+}
+

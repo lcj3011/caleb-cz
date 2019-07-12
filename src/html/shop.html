@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="view">
+    <link rel="stylesheet" href="../css/shop.css" type="text/css">
+    <title>坚果三脚架自拍杆 - Smartisan</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<!--开始 头部-->
+<header id="header-container"></header>
+
+<!--开始 中间内容-->
+<div id="body1">
+    <div class="shop">
+        <div class="con">
+            <div class="list15">
+                <script type="text/html" id="shop-template3">
+                {{each list1 shop}}
+                <ul class="u7">
+                    <li class="on">
+                        <img src="{{shop.img21}}" alt="" width="54" height="54">
+                    </li>
+                    <li>
+                        <img src="{{shop.img22}}" alt="" width="54" height="54">
+                    </li>
+                    <li>
+                        <img src="{{shop.img23}}" alt="" width="54" height="54">
+                    </li>
+                    <li>
+                        <img src="{{shop.img24}}" alt="" width="54" height="54">
+                    </li>
+                </ul>
+                {{/each}}
+                </script>
+            </div>
+
+        </div>
+
+        <div class="con1">
+
+
+            <div class="bigImg">
+
+                <script type="text/html" id="shop-template1">
+                    {{each list1 shop}}
+                    <div class="u6">
+                        <img src="{{shop.img21}}" alt="" class="bigimg on">
+                    </div>
+
+                    <div class="imgMagnifier">
+                        <img src="">
+                    </div>
+                    {{/each}}
+                </script>
+            </div>
+        </div>
+
+        <div class="con2">
+            <article class="clearfix">
+                <h1>坚果三脚架自拍杆</h1>
+                <h2>两种模式，随时随地都能拍得开心</h2>
+                <h3><em>￥</em>99.00</h3>
+            </article>
+            <div class="color clearfix">
+                <span>颜色选择</span>
+                <div class="cir">
+                    <i><img src="../images/shop/cir.jpg" alt=""></i>
+                </div>
+            </div>
+            <div class="num">
+                <span>数量选择</span>
+                <div class="num1">
+                    <span class="sub"></span>
+                    <span class="shuliang">1</span>
+                    <span class="add"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="con3 clearfix">
+            <p class="addCart1"><a href="http://localhost:404/html/cart.html">加入购物车</a></p>
+        </div>
+    </div>
+
+    <div class="pic">
+        <div class="tit">
+            <p>产品信息</p>
+            <div class="pic1">
+                <img src="../images/shop/big1.webp" alt="" class="one">
+                <img src="../images/shop/big2.webp" alt="">
+                <img src="../images/shop/big3.webp" alt="">
+                <img src="../images/shop/big4.webp" alt="">
+                <img src="../images/shop/big5.webp" alt="">
+                <img src="../images/shop/big6.webp" alt="">
+                <img src="../images/shop/big7.webp" alt="">
+                <img src="../images/shop/big8.webp" alt="">
+                <img src="../images/shop/big9.webp" alt="">
+                <img src="../images/shop/big10.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="ad">
+
+        <script type="text/html" id="shop-template">
+        <div class="tit">
+            <p>相关推荐</p>
+        </div>
+        {{each list shop}}
+        <ul class="list clearfix">
+            <li>
+                <div class="img">
+                    <a href="http://localhost:404/html/shop.html" class="alink"><img src="{{shop.img11}}" alt=""></a>
+                </div>
+                <h4>{{shop.title11}}</h4>
+                <h6>{{shop.info11}}</h6>
+                <div class="cir"><img src="../images/shop/otherCir.jpg" alt=""></div>
+                <div class="price on">￥ {{shop.price11}}</div>
+                <div class="btn clearfix">
+                    <button class="normal">查看详情</button>
+                    <button class="cart">加入购物车</button>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="http://localhost:404/html/shop.html" class="alink"><img src="{{shop.img11}}" alt=""></a>
+                </div>
+                <h4>{{shop.title11}}</h4>
+                <h6>{{shop.info11}}</h6>
+                <div class="cir"><img src="../images/shop/otherCir.jpg" alt=""></div>
+                <div class="price on">￥ {{shop.price11}}</div>
+                <div class="btn clearfix">
+                    <button class="normal">查看详情</button>
+                    <button class="cart">加入购物车</button>
+                </div>
+            </li>
+        </ul>
+        {{/each}}
+
+
+
+
+        </script>
+    </div>
+
+    <div class="tot">
+        <div class="con">
+            <h2>您已选择了</h2>
+            <span class="h2">坚果三脚架自拍杆 × 1 </span>
+            <p class="black">黑色</p>
+            <div class="btn">
+                <a href="">到货通知</a>
+            </div>
+            <div class="price">
+                <i>￥</i>
+                <span>99.00</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="shop-img" id="shop-imgs">
+    </div>
+</div>
+<script type="text/html" id="template-img">
+    <div class="view_bd big-container">
+        <img class="zoom-img img-responsive big" src="{{data.images[0]}}" data-zoom-image="{{data.images[0]}}" alt="服务器无响应" />
+    </div>
+    <div class="view_thumbs" id="gal1">
+        <ul class="view-ul ">
+            {{each data.images img}}
+            <li class="current small-container">
+                <a href="javascript:;" data-image="{{img}}" data-zoom-image="{{img}}">
+                    <img class="img-responsive small" src="{{img}}" alt="服务器无响应" />
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</script>
+<!--开始 底部-->
+<footer id="footer-container"></footer>
+
+
+<script src="/libs/require/require.min.js" data-main="/js/shop"></script>
+
+</body>
+</html>

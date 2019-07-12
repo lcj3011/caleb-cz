@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+@import url("common.scss");
+@import url("public.scss");
+
+$colorPrice: #d44d44;
+$colorHover: #5079d9;
+
+/*微调header部分内容*/
+header .nav-2 .con ul li:nth-child(4) a{
+  font-weight: 700;
+  color: #333;
+
+  &:hover{
+    color: $colorHover;
+  }
+}
+/*微调footer部分*/
+footer{
+  position: relative;
+  top: 120px;
+}
+
+/*身体部分*/
+#body1{
+  width: 100%;
+  background: #ededed;
+
+  #form{
+    margin: 50px auto;
+    width: 800px;
+  }
+  #form::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+  }
+  #form{zoom:1;}
+  #form table{
+    width: 100%;
+    border: 1px solid mediumvioletred;
+    border-collapse: collapse;/*关键代码*/
+  }
+  #form table .tit{
+    height: 35px;
+    line-height: 35px;
+    background: mediumvioletred;
+    color: #fff;
+  }
+  #form table td{
+    border: 1px solid mediumvioletred;
+  }
+  #form table .pic{
+    width: 200px;
+    height: 120px;
+    vertical-align: middle;
+    text-align: center;
+
+  }
+  #form table .uni{
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    width: 200px;
+  }
+  #form table .num{
+    text-align: center;
+    width: 200px;
+  }
+  #form table .num input{
+    width: 40px;
+    height: 30px;
+    margin: 0 5px 0 5px;
+  }
+  #form table .num button{
+    width: 30px;
+    height: 30px;
+  }
+  #form table .subT{
+    text-align: center;
+    color: red;
+  }
+  #form .total{
+    float: right;
+    margin-top: 2px;
+  }
+  #form .total p{
+    margin-top: 3px;
+  }
+  #form .total p span{
+    color: red;
+  }
+
+
+
+  >.con{
+    position: relative;
+    top: 80px;
+    width: 1220px;
+    margin: -113px auto 0;
+    .tit{
+      width: 1218px;
+      height: 59px;
+      line-height: 59px;
+      border: 1px solid #dbdbdb;
+      border-radius: 8px 8px 0 0;
+      background: #fafafa;
+
+      h2{
+        font-size: 18px;
+        font-weight: 700;
+        color: rgba(0,0,0,.6);
+        text-indent: 30px;
+      }
+    }
+    .con14{
+      width: 1218px;
+      height: 858px;
+      border: 1px solid #dbdbdb;
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+      background: #fff;
+
+      ul{
+        li{
+          float: left;
+        }
+      }
+      .ul1{
+        border-bottom: 1px solid #dbdbdb;
+        li{
+          width: 302px;
+          height: 428px;
+          border-right: 1px solid #dbdbdb;
+          &:nth-child(4){
+            border-right: none;
+          }
+          .img{
+
+            img{
+              display: block;
+              width: 216px;
+              height: 216px;
+              margin: 45px auto 20px;
+            }
+          }
+          h4{
+            line-height: 1.2;
+            font-size: 14px;
+            color: #333;
+            font-weight: 700;
+            text-align: center;
+          }
+          h6{
+            padding-top: 15px;
+            font-size: 12px;
+            line-height: 1.2;
+            color: #999;
+            text-align: center;
+          }
+          .cir{
+            position: relative;
+            margin: 15px auto 0;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #b2b2b2;
+            box-shadow: inset 0 0 0 1px #b2b2b2;
+            border-radius: 50%;
+            transition: all .15s ease-out;
+            cursor: pointer;
+
+            img{
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              top: -42px;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+            }
+          }
+          .price{
+            display: none;
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial;
+            color: #d44d44;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: all .1s ease-out;
+          }
+          .tip{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            button{
+              display: none;
+              box-shadow: inset 0 0 1px #cfcdcd;
+              border: 1px solid #e1e1e1;
+              border-radius: 4px;
+              font-size: 12px;
+              font-weight: 700;
+              color: #646464;
+              background-color: #f9f9f9;
+              background-image: linear-gradient(#fff,#f9f9f9);
+              width: 100px;
+              height: 30px;
+              text-align: center;
+              cursor: pointer;
+              user-select: none;
+              outline: none;
+              transition: all .15s ease-out;
+            }
+          }
+
+          .on{
+            display: block;
+          }
+        }
+        .noCir{
+          .price{
+            margin-top: 51px;
+          }
+          .tip{
+            margin-top: 51px;
+          }
+        }
+      }
+
+
+      .ul2{
+        li{
+          width: 302px;
+          height: 428px;
+          border-right: 1px solid #dbdbdb;
+
+          .img{
+
+            img{
+              display: block;
+              width: 216px;
+              height: 216px;
+              margin: 45px auto 20px;
+            }
+          }
+          h4{
+            line-height: 1.2;
+            font-size: 14px;
+            color: #333;
+            font-weight: 700;
+            text-align: center;
+          }
+          h6{
+            padding-top: 15px;
+            font-size: 12px;
+            line-height: 1.2;
+            color: #999;
+            text-align: center;
+          }
+          .cir{
+            position: relative;
+            margin: 15px auto 0;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #b2b2b2;
+            box-shadow: inset 0 0 0 1px #b2b2b2;
+            border-radius: 50%;
+            transition: all .15s ease-out;
+            cursor: pointer;
+
+            img{
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              top: -42px;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+            }
+          }
+          .price{
+            display: none;
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial;
+            color: #d44d44;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: all .1s ease-out;
+          }
+          .tip{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            button{
+              display: none;
+              box-shadow: inset 0 0 1px #cfcdcd;
+              border: 1px solid #e1e1e1;
+              border-radius: 4px;
+              font-size: 12px;
+              font-weight: 700;
+              color: #646464;
+              background-color: #f9f9f9;
+              background-image: linear-gradient(#fff,#f9f9f9);
+              width: 100px;
+              height: 30px;
+              text-align: center;
+              cursor: pointer;
+              user-select: none;
+              outline: none;
+              transition: all .15s ease-out;
+            }
+          }
+
+          .on{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
